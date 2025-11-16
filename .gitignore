@@ -19,7 +19,7 @@ venv/
 *.db
 *.sqlite
 *.sqlite3
-orders.db
+
 
 # --- Log ---
 *.log
@@ -27,3 +27,8 @@ orders.db
 # --- OS junk ---
 .DS_Store
 Thumbs.db
+
+# --- Others ---
+orders.db
+session.db-shm
+session.db-wal
