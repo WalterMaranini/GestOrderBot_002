@@ -1,0 +1,29 @@
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtualenv ---
+venv/
+.venv/
+
+# --- IDE (PyCharm, VSCode) ---
+.idea/
+.vscode/
+
+# --- Environment / secrets ---
+.env
+*.env
+
+# --- Database locali ---
+*.db
+*.sqlite
+*.sqlite3
+orders.db
+
+# --- Log ---
+*.log
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db

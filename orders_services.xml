@@ -1,0 +1,25 @@
+<RestServices baseUrl="http://127.0.0.1:8001">
+  <!-- Dettaglio singolo ordine -->
+  <Service name="get_order" method="GET" path="/orders/{order_id}">
+    <Param name="order_id" required="true" location="path" type="string" />
+  </Service>
+
+  <!-- Lista ordini (es. ultimi N per cliente) -->
+  <Service name="get_orders" method="GET" path="/orders">
+    <Param name="customer_id" required="false" location="query" type="string" />
+    <Param name="limit"         required="false" location="query" type="int" />
+  </Service>
+
+  <!-- Creazione nuovo ordine -->
+  <Service name="create_order" method="POST" path="/orders">
+    <Param name="customer_code" required="true" location="body" type="string" />
+    <Param name="delivery_date" required="true" location="body" type="string" />
+    <Param name="lines"         required="true" location="body" type="json" />
+  </Service>
+
+  <Service name="get_price_list" method="GET" path="/prices">
+    <Param name="customer_code" required="false" location="query" type="string" />
+    <Param name="article_code"  required="false" location="query" type="string" />
+  </Service>
+
+</RestServices>
