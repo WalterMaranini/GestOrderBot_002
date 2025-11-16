@@ -73,6 +73,7 @@ class OrdersBot:
                 "- Se l'utente dice 'inserisci un ordine', mappa internamente questa intenzione "
                 "  al servizio `create_order`.\n"
             ),
+
             # IMPORTANTISSIMO: qui agganciamo il server MCP locale
             mcp_servers=[self.mcp_server],
             # Se vuoi forzare SEMPRE l'uso di strumenti, puoi usare ModelSettings(tool_choice="required")
